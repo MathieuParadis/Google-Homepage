@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  	<meta charset="UTF-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  	<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+	<!-- CSS Styles -->
+	<link rel="stylesheet" type="text/css" href="styles.css" />
+
+	<!-- Font -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+	<nav id="links-top">
+		<div id="links-top-right">
+			<a id="gmail" href="https://www.gmail.com">Gmail</a>
+			<a id="images" href="https://www.google.co.uk/imghp?hl=fr&authuser=0&ogbl">Images</a>
+			<img src="images/logo.png" style="width: 13%;">
+			<a id="connexion" href="https://accounts.google.com/ServiceLogin/signinchooser?hl=fr&passive=true&continue=https%3A%2F%2Fwww.google.com%2F&ec=GAZAmgQ&flowName=GlifWebSignIn&flowEntry=ServiceLogin">Connexion</a>
+		</div>
+	</nav>
+	<section>
+		<div id="google">
+			<img src="https://www.google.fr/logos/doodles/2021/wear-a-mask-save-lives-apr-6-6753651837109262.2-law.gif" alt="Portez un masque, sauver des vies.">
+		</div>
+		<div id="search-bar-area">
+			<img id="loupe" src="images/logo_loupe.png" alt="loupe" style="width: 6%; height: 6%;">
+			<input type="text" name="search" id="search-bar" />
+			<img id="micro" src="images/logo_micro.png" alt="micro" style="width: 6%; height: 6%;">
+		</div>
+		<div id="btn">
+			<button id="recherche" type="button">Recherche Google</button>
+			<button id="chance" type="button">J'ai de la chance</button>
+		</div>
+		<div id="langue">Google disponible en : <a href="https://www.google.com/">English</a></div>
+	</section>
+
+	<div id="country">
+		<p>France</p>
+	</div>
+	<nav id="links-bottom">
+		<div id="links-bottom-left">
+			<a href="https://about.google/?utm_source=google-GB&utm_medium=referral&utm_campaign=hp-footer&fg=1">À propos</a>
+			<a href="https://ads.google.com/intl/fr_uk/home/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Publicité</a>
+			<a href="https://smallbusiness.withgoogle.com/intl/en_uk/?subid=uk-en-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google&utm_medium=ep&utm_campaign=google_hpbfooter&utm_content=google_hpbfooter&gmbsrc=uk-en_GB-et-gs-z-gmb-s-z-u~sb-g4sb_srvcs-u">Entreprise</a>
+			<a href="https://www.google.com/search/howsearchworks/?fg=1">Comment fonctionne la recherche Google ?</a>
+		</div>
+		<div id="links-bottom-right">
+			<a href="https://policies.google.com/privacy?hl=fr-GB&fg=1">Confidentialité</a>
+			<a href="https://policies.google.com/terms?hl=fr-GB&fg=1">Conditions</a>
+			<div id="dropdown-menu">
+				<button id="bouton-up" onclick="myFunction()">Paramètres</button>
+				<div id="myDIV">
+					<div class="lien" onclick="window.location='https://www.google.com/preferences?hl=fr-GB&fg=1';">
+						<a class="lien-menu" href="https://www.google.com/preferences?hl=fr-GB&fg=1" active>Paramètres de recherche</a>
+					</div>
+					<div class="lien" onclick="window.location='https://www.google.com/advanced_search?hl=fr-GB&fg=1';">
+						<a class="lien-menu" href="https://www.google.com/advanced_search?hl=fr-GB&fg=1">Recherche avancée</a>
+					</div>
+					<div class="lien" onclick="window.location='https://myactivity.google.com/privacyadvisor/search?utm_source=googlemenu&fg=1';">
+						<a class="lien-menu" href="https://myactivity.google.com/privacyadvisor/search?utm_source=googlemenu&fg=1">Vos données dans la recherche Google</a>
+					</div>
+					<div class="lien" onclick="window.location='https://myactivity.google.com/item?utm_source=google&hl=fr-GB&fg=1&restrict=search';">
+						<a class="lien-menu" href="https://myactivity.google.com/item?utm_source=google&hl=fr-GB&fg=1&restrict=search">Historiques des recherches</a>
+					</div>
+					<div class="lien" onclick="window.location='https://support.google.com/websearch/?visit_id=637532599358551746-2935984962&hl=fr-GB&rd=2#topic=3378866';">
+						<a class="lien-menu" href="https://support.google.com/websearch/?visit_id=637532599358551746-2935984962&hl=fr-GB&rd=2#topic=3378866">Aide sur la recherche</a>
+					</div>
+					<div class="lien" onclick="window.location='';">
+						<a class="lien-menu" href="">Envoyer des commentaires</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</nav>
+</body>
+
+<script>
+var x = document.getElementById("myDIV");
+
+function myFunction() {
+  if (x.style.display == "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+
+</html>
